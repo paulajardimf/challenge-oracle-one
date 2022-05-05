@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Decodificador de Texto</title>
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100&display=swap" rel="stylesheet">
+</head>
+<body>
+    <main class="main">
+        <img src="img/Logo.png" class="logo">
+        <textarea type="text" class="input-texto" placeholder="Digite seu texto"></textarea>
+        <div class="grupo-aviso-botoes">
+            <div class="aviso">
+                <img src="img/!.png" class="picto">
+                <label>Apenas letras minúsculas e sem acento</label>
+            </div>
+            <div class="botoes">
+                <button class="botao-criptografar" onclick="btnCriptografar()">Criptografar</button>
+                <button class="botao-descriptografar" onclick="btnDescriptografar()">Descriptografar</button>
+            </div>
+        </div>
+        <div class="conjunto-ilustra">
+            <img src="img/ilustra.png" class="ilustra">
+            <h1 class="frase1">Nenhuma mensagem encontrada</h1>
+            <h2 class="frase2">Digite um texto que você deseja criptografar ou descriptografar.</h2>
+        </div>
+        <textarea class="output-texto" readonly></textarea>        
+    </main>
+    <footer>
+        <div class="conjunto-rodape">
+            <h3 class="assinatura">2022 - Desenvolvido por Paula Jardim</h3>
+            <div class="conjunto-redes">
+                <img src="img/github.png" class="github">
+                <img src="img/linkedin.png" class="linkedin">
+            </div>
+        </div>
+    </footer>
+</body>
+<script src="index.js"></script>
+</html>
