@@ -20,7 +20,7 @@ main {
 
 .input-texto {
     margin-top: 90px;
-    margin-left: 200px;
+    margin-left: 150px;
     border: none;
     background-color: transparent;
     outline: none;
@@ -44,7 +44,7 @@ main {
 .aviso{
     display: flex;
     position: relative;
-    margin-left: 200px; 
+    margin-left: 150px; 
 }
 
 .mensagem {
@@ -97,7 +97,7 @@ main {
 .botoes{
     display: relative;
     margin-bottom: 2em;
-    margin-left: 200px;
+    margin-left: 150px;
     margin-top: 40px;
 }
 
@@ -128,8 +128,8 @@ main {
     display: relative;
     z-index: +1;
     position: absolute;
-    align-items: center;
-    right: 110px;
+    align-items: flex-end;
+    right: 80px;
     top: 70px;
     
 }
@@ -173,7 +173,7 @@ main {
 }
 
 .assinatura{
-    display: inline-block;
+    display: flex;
     font-size: 15px;
     font-weight: bold;
     color: #343A40;
@@ -181,16 +181,26 @@ main {
 }
 
 .linkedin{
-    display: inline-block;
     position: relative;
     height: 30px;
     margin-left: 5px;
 }
 
+.linkedin:hover{
+    background: #0A3871;
+    transition: 1s all;
+    cursor: pointer;
+}
+
 .github{
-    display: inline-block;
     position: relative;
     height: 30px;
+}
+
+.github:hover{
+    background: #0A3871;
+    transition: 1s all;
+    cursor: pointer;
 }
 
 .conjunto-redes{
@@ -201,7 +211,7 @@ main {
 
 .conjunto-rodape{
     display: flex;
-    width: 100%;
+    width: auto;
     margin: 0 auto;
     background-color: lightgrey;
 }
