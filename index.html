@@ -1,48 +1,84 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
     <title>Decodificador de Texto</title>
-    <link rel="stylesheet" href="reset.css">
-    <link rel="stylesheet" href="style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
-</head>
-<body>
+    <link rel="stylesheet" href="reset.css" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
     <main class="main">
-        <section class="container">
-            <img src="img/Logo.png" class="logo" alt="Logo da Alura, a letra 'a'">
-            <textarea type="text" class="input-texto" placeholder="Digite seu texto"></textarea>
-                <div class="aviso">
-                    <img src="img/!.png" class="picto">
-                    <label class="mensagem">Apenas letras minúsculas e sem acento</label>
-                </div>
-                <div class="botoes">
-                    <button class="botao-criptografar" onclick="btnCriptografar()">Criptografar</button>
-                    <button class="botao-descriptografar" onclick="btnDescriptografar()">Descriptografar</button>
-                </div>
-        </section>
-        <section class="container">
-            <div class="conjunto-ilustra" id="off">
-                <img src="img/ilustra.png" class="ilustra" alt="Ilustração de uma pessoa, com uma lupa na mão analisando um diamante">
-                <h1 class="frase1">Nenhuma mensagem encontrada</h1>
-                <h2 class="frase2">Digite um texto que você deseja criptografar ou descriptografar.</h2>
-            </div>
-            <textarea class="output-texto" readonly></textarea>
-            <button class="botao-copiar" onclick="btnCopiar()">Copiar</button>
-        </section>
+      <section class="container-text">
+        <header>
+          <img
+            src="img/Logo.png"
+            class="logo"
+            alt="Logo da Alura, a letra 'a'"
+          />
+        </header>
+        <textarea
+          type="text"
+          class="input-texto"
+          placeholder="Digite seu texto"
+        ></textarea>
+        <div class="conjunto-aviso-botoes">
+          <div class="aviso">
+            <img src="img/!.png" class="picto" />
+            <label class="mensagem"
+              >Apenas letras minúsculas e sem acento</label
+            >
+          </div>
+          <div class="botoes">
+            <button class="botao-criptografar" onclick="btnCriptografar()">
+              Criptografar
+            </button>
+            <button
+              class="botao-descriptografar"
+              onclick="btnDescriptografar()"
+            >
+              Descriptografar
+            </button>
+          </div>
+        </div>
+      </section>
+      <aside class="container-output">
+        <div class="conjunto-output">
+          <div class="conjunto-ilustra" id="off">
+            <img
+              src="img/ilustra.svg"
+              class="ilustra"
+              alt="Ilustração de uma pessoa, com uma lupa na mão analisando um diamante"
+            />
+            <h1 class="frase1">Nenhuma mensagem encontrada</h1>
+            <h2 class="frase2">
+              Digite um texto que você deseja criptografar ou descriptografar.
+            </h2>
+          </div>
+          <textarea class="output-texto" readonly></textarea>
+        </div>
+        <button class="botao-copiar" onclick="btnCopiar()">Copiar</button>
+      </aside>
     </main>
     <footer>
-        <div class="conjunto-rodape">
-            <h3 class="assinatura">2022 - Desenvolvido por Paula Jardim</h3>
-            <div class="conjunto-redes">
-                <a href="https://github.com/paulajardimf" target="_blank"><img src="img/github.png" class="github"></a>
-                <a href="https://www.linkedin.com/in/paulajardimf/" target="_blank"><img src="img/linkedin.png" class="linkedin"></a>
-            </div>
+      <div class="conjunto-rodape">
+        <h3 class="assinatura">2022 - Desenvolvido por Paula Jardim</h3>
+        <div class="conjunto-redes">
+          <a href="https://github.com/paulajardimf" target="_blank"
+            ><img src="img/github.png" class="github"
+          /></a>
+          <a href="https://www.linkedin.com/in/paulajardimf/" target="_blank"
+            ><img src="img/linkedin.png" class="linkedin"
+          /></a>
         </div>
+      </div>
     </footer>
-</body>
-<script src="index.js"></script>
+  </body>
+  <script src="index.js"></script>
 </html>

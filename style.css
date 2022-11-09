@@ -1,223 +1,254 @@
 * {
-    font-family: 'Inter', sans-serif;
+  font-family: "Inter", sans-serif;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
 }
 
 body {
-    background: #F3F5FC;
+  background: #f3f5fc;
+  width: 100%;
 }
 
 main {
-    display: flex;
-    margin-bottom: 50px;
+  display: flex;
+  width: 100%;
+  height: calc(100vh - 40px);
 }
 
-.logo {
-    position: absolute;
-    flex-direction: column;
-    align-items: flex-start;
-    padding: 2em;
+header {
+  width: 100%;
+  height: 80px;
+  margin-top: 20px;
+  display: flex;
+  justify-content: left;
+  padding: 1rem;
+}
+
+.container-text {
+  display: flex;
+  flex-direction: column;
+  width: 70%;
+  align-items: center;
+  gap: 25px;
 }
 
 .input-texto {
-    margin-top: 90px;
-    margin-left: 150px;
-    border: none;
-    background-color: transparent;
-    outline: none;
-    width: 630px;
-    height: 300px;
-    resize: none;
-    font-size: 2em;
-    font-style: normal;
-    color: #0A3871;
+  padding: 12px;
+  border: none;
+  background-color: transparent;
+  outline: none;
+  width: 60%;
+  height: 70%;
+  resize: none;
+  font-size: 2rem;
+  font-style: normal;
+  color: #0a3871;
 }
 
-::placeholder{
-    color: #0A3871;
+::placeholder {
+  color: #0a3871;
 }
 
-.picto{
-    margin-right: 0.5em;
-    height: 22px;
+.conjunto-aviso-botoes {
+  display: flex;
+  flex-direction: column;
+  width: 60%;
 }
 
-.aviso{
-    display: flex;
-    position: relative;
-    margin-left: 150px; 
+.aviso {
+  display: flex;
+  margin-bottom: 10px;
+}
+
+.picto {
+  margin-right: 0.5em;
+  height: 1.375rem;
 }
 
 .mensagem {
-    font-size: 15px;
-    height: 2em;
-    align-items: center;
-    margin-bottom: 2px;
+  font-size: 0.688rem;
+  height: 2em;
 }
 
-.botao-criptografar{
-    background-color: #0A3871;
-    width: 300px;
-    height: 67px;
-    border: none;
-    border-radius: 24px;
-    font-size: 1em;
-    color: white;
-    letter-spacing: 0.5px;
-    margin-right: 1em;
-    box-shadow: 1px 0.5px 9px 1px rgba(73, 73, 73, 0.377);
+.botoes {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.botao-criptografar {
+  background-color: #0a3871;
+  width: 20.5rem;
+  height: 67px;
+  border: none;
+  border-radius: 24px;
+  font-size: 1em;
+  color: white;
+  letter-spacing: 0.5px;
+  margin-right: 1rem;
+  box-shadow: 1px 0.5px 9px 1px rgba(73, 73, 73, 0.377);
 }
 
 .botao-criptografar:hover {
-    background-color: #D8DFE8;
-    color: #0A3871;
-    border: 1px solid #0A3871;
-    transition: 1s all;
-    cursor: pointer;
+  background-color: #d8dfe8;
+  color: #0a3871;
+  border: 1px solid #0a3871;
+  transition: 1s all;
+  cursor: pointer;
 }
 
-.botao-descriptografar{
-    background-color: #D8DFE8;
-    width: 300px;
-    height: 67px;
-    border: 1px solid #0A3871;
-    border-radius: 24px;
-    font-size: 1em;
-    color: #0A3871;
-    letter-spacing: 0.5px;
-    box-shadow: 1px 0.5px 9px 1px rgba(73, 73, 73, 0.377);
+.botao-descriptografar {
+  background-color: #d8dfe8;
+  width: 20.5rem;
+  height: 67px;
+  border: 1px solid #0a3871;
+  border-radius: 24px;
+  font-size: 1rem;
+  color: #0a3871;
+  letter-spacing: 0.5px;
+  box-shadow: 1px 0.5px 9px 1px rgba(73, 73, 73, 0.377);
 }
 
 .botao-descriptografar:hover {
-    background-color: #0A3871;
-    color: white;
-    transition: 1s all;
-    cursor: pointer;
+  background-color: #0a3871;
+  color: white;
+  transition: 1s all;
+  cursor: pointer;
 }
 
-.botoes{
-    display: relative;
-    margin-bottom: 2em;
-    margin-left: 150px;
-    margin-top: 40px;
+.container-output {
+  display: flex;
+  flex-direction: column;
+  height: calc(100% - 40px);
+  width: 25%;
+  align-items: center;
+  justify-content: center;
+  align-self: flex-end;
+}
+
+.conjunto-output {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.conjunto-ilustra {
+  display: flex;
+  flex-direction: column;
+  z-index: 1;
+  position: absolute;
+  align-items: center;
 }
 
 .ilustra {
-    display: flex;
-    height: 210px;
-    margin-left: 25px;
+  display: flex;
+  height: 210px;
 }
 
-.frase1{
-    position: relative;
-    font-size: 24px;
-    color: #343A40;
-    width: 300px;
-    text-align: center;
-    margin-top: 5px;
+.frase1 {
+  font-size: 1.5rem;
+  color: #343a40;
+  width: 18.75rem;
+  text-align: center;
+  margin-top: 5px;
 }
 
-.frase2{
-    width: 300px;
-    font-size: 15px;
-    color: #343A40;
-    text-align: center;
-    margin-top: 3px;
+.frase2 {
+  width: 18.75rem;
+  font-size: 0.938rem;
+  color: #343a40;
+  text-align: center;
+  margin-top: 3px;
 }
 
-.conjunto-ilustra{
-    display: relative;
-    z-index: +1;
-    position: absolute;
-    align-items: flex-end;
-    right: 80px;
-    top: 70px;
-    
+.output-texto {
+  border: none;
+  background-color: white;
+  border-radius: 25px;
+  outline: none;
+  width: 400px;
+  max-height: 80vh;
+  min-height: 75vh;
+  resize: none;
+  font-size: 24px;
+  padding: 40px;
+  color: #0a3871;
+  box-shadow: 1px 0.5px 9px 1px rgba(73, 73, 73, 0.377);
 }
 
-.output-texto{
-    position: relative;
-    margin-top: 20px;
-    margin-left: 40px;
-    border: none;
-    background-color: white;
-    border-radius: 25px;
-    outline: none;
-    width: 330px;
-    height: 350px;
-    resize: none;
-    font-size: 24px; 
-    padding: 40px;
-    color: #0A3871;
-    box-shadow: 1px 0.5px 9px 1px rgba(73, 73, 73, 0.377);
-}
-
-.botao-copiar{
-    background-color: white;
-    margin-top: 18px;
-    margin-left: 40px;
-    width: 410px;
-    height: 67px;
-    border: 1px solid #0A3871;
-    border-radius: 24px;
-    font-size: 1em;
-    color: #0A3871;
-    letter-spacing: 0.5px;
-    box-shadow: 1px 0.5px 9px 1px rgba(73, 73, 73, 0.377);
+.botao-copiar {
+  background-color: white;
+  margin-top: 18px;
+  width: 25.625rem;
+  min-height: 67px;
+  border: 1px solid #0a3871;
+  border-radius: 24px;
+  font-size: 1rem;
+  color: #0a3871;
+  letter-spacing: 0.5px;
+  box-shadow: 1px 0.5px 9px 1px rgba(73, 73, 73, 0.377);
+  
 }
 
 .botao-copiar:hover {
-    background-color: #0A3871;
-    color: white;
-    transition: 1s all;
-    cursor: pointer;
+  background-color: #0a3871;
+  color: white;
+  transition: 1s all;
+  cursor: pointer;
 }
 
-.assinatura{
-    display: flex;
-    font-size: 15px;
-    font-weight: bold;
-    color: #343A40;
-    margin-left: 90px;
+.assinatura {
+  display: flex;
+  font-size: 15px;
+  font-weight: bold;
+  color: #343a40;
+  margin-left: 90px;
 }
 
-.linkedin{
-    position: relative;
-    height: 30px;
-    margin-left: 5px;
+.linkedin {
+  position: relative;
+  height: 30px;
+  margin-left: 5px;
 }
 
-.linkedin:hover{
-    background: #0A3871;
-    transition: 1s all;
-    cursor: pointer;
+.linkedin:hover {
+  background: #0a3871;
+  transition: 1s all;
+  cursor: pointer;
 }
 
-.github{
-    position: relative;
-    height: 30px;
+.github {
+  position: relative;
+  height: 30px;
 }
 
-.github:hover{
-    background: #0A3871;
-    transition: 1s all;
-    cursor: pointer;
+.github:hover {
+  background: #0a3871;
+  transition: 1s all;
+  cursor: pointer;
 }
 
-.conjunto-redes{
-    position: absolute;
-    right: 65px;
-    padding-top: 10px;
+.conjunto-redes {
+  position: absolute;
+  right: 65px;
+  padding-top: 10px;
 }
 
-.conjunto-rodape{
-    display: flex;
-    width: auto;
-    margin: 0 auto;
-    background-color: lightgrey;
+.conjunto-rodape {
+  display: flex;
+  position: fixed;
+  bottom: 0;
+  align-items: center;
+  width: 100%;
+  height: 30px;
+  margin: 0 auto;
+  background-color: lightgrey;
 }
 
 @media screen and (max-width: 480px) {
-    .conjunto-rodape{
-        width: auto;
-    }
-} 
+  .conjunto-rodape {
+    width: auto;
+  }
+}
