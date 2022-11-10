@@ -63,7 +63,7 @@ header {
 
 .picto {
   margin-right: 0.5em;
-  height: 1.375rem;
+  height: 1rem;
 }
 
 .mensagem {
@@ -128,10 +128,10 @@ header {
 }
 
 .conjunto-output {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
 .conjunto-ilustra {
@@ -189,7 +189,6 @@ header {
   color: #0a3871;
   letter-spacing: 0.5px;
   box-shadow: 1px 0.5px 9px 1px rgba(73, 73, 73, 0.377);
-  
 }
 
 .botao-copiar:hover {
@@ -207,33 +206,25 @@ header {
   margin-left: 90px;
 }
 
-.linkedin {
-  position: relative;
-  height: 30px;
-  margin-left: 5px;
+.conjunto-redes {
+  display: flex;
+  position: absolute;
+  right: 65px;
+  padding-top: 10px;
 }
 
-.linkedin:hover {
-  background: #0a3871;
-  transition: 1s all;
-  cursor: pointer;
+.conjunto-redes img {
+  margin-right: 15px;
+}
+
+.linkedin {
+  position: relative;
+  height: 20px;
 }
 
 .github {
   position: relative;
-  height: 30px;
-}
-
-.github:hover {
-  background: #0a3871;
-  transition: 1s all;
-  cursor: pointer;
-}
-
-.conjunto-redes {
-  position: absolute;
-  right: 65px;
-  padding-top: 10px;
+  height: 20px;
 }
 
 .conjunto-rodape {
@@ -244,7 +235,11 @@ header {
   width: 100%;
   height: 30px;
   margin: 0 auto;
-  background-color: lightgrey;
+  background-color: #0a3871;
+}
+
+.conjunto-rodape h3 {
+  color: #d8dfe8;
 }
 
 @media screen and (max-width: 480px) {
