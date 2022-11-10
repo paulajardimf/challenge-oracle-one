@@ -242,8 +242,54 @@ header {
   color: #d8dfe8;
 }
 
-@media screen and (max-width: 480px) {
-  .conjunto-rodape {
-    width: auto;
+@media screen and (min-device-width: 800px) and (max-device-width: 1000px) {  
+  main {
+    flex-direction: column;
   }
+
+  .container-text {
+    width: 100%;
+  }
+
+  .container-text {
+    gap: 25px;
+  }
+
+  .input-texto{
+    height: 50vh;
+    width: 73%;
+  }
+
+  .conjunto-aviso-botoes{
+    width: 73%;
+  }
+
+  .container-output{
+    align-self: center;
+    height: 40vh;
+    width: 100%;
+    flex-direction: column;
+  }
+
+  .conjunto-ilustra{
+    display: none;
+  }
+
+  .output-texto {
+    width: 73vw;
+    max-height: 133px;
+    min-height: 133px;
+    margin-top: 30px;
+  }
+
+  .botao-copiar {
+    width: 73%;
+    margin-bottom: 50px;
+  }
+
+}
+
+@media screen and (max-device-width: 800px) {
+
+
 }
